@@ -20,6 +20,8 @@
 @property NSString * cover;
 @property NSUInteger duration;
 @property NSUInteger elapsed;
+@property NSUInteger playbackQueueIndex;
+@property NSUInteger playbackQueueCount;
 @property bool isPlaying;
 @property bool hasPrev;
 @property bool hasNext;

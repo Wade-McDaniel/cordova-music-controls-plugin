@@ -20,6 +20,8 @@
         [self setCover: [dictionary objectForKey:@"cover"]];
         [self setDuration: [[dictionary objectForKey:@"duration"] integerValue]];
         [self setElapsed: [[dictionary objectForKey:@"elapsed"] integerValue]];
+        [self setPlaybackQueueIndex: [[dictionary objectForKey:@"playbackQueueIndex"] integerValue]];
+        [self setPlaybackQueueCount: [[dictionary objectForKey:@"playbackQueueCount"] integerValue]];
         [self setIsPlaying: [[dictionary objectForKey:@"isPlaying"] boolValue]];
         [self setHasPrev: [[dictionary objectForKey:@"hasPrev"] boolValue]];
         [self setHasNext: [[dictionary objectForKey:@"hasNext"] boolValue]];
