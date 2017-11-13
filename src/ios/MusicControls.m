@@ -33,6 +33,8 @@ MusicControlsInfo * musicControlsSettings;
         NSNumber * duration = [NSNumber numberWithInt:[musicControlsInfo duration]];
         NSNumber * elapsed = [NSNumber numberWithInt:[musicControlsInfo elapsed]];
         NSNumber * playbackRate = [NSNumber numberWithBool:[musicControlsInfo isPlaying]];
+        NSNumber * queueIndex = [NSNumber numberWithInt:[musicControlsInfo playbackQueueIndex]];
+        NSNumber * queueCount = [NSNumber numberWithInt:[musicControlsInfo playbackQueueCount]];
         
         if (mediaItemArtwork != nil) {
             [updatedNowPlayingInfo setObject:mediaItemArtwork forKey:MPMediaItemPropertyArtwork];
@@ -44,6 +46,8 @@ MusicControlsInfo * musicControlsSettings;
         [updatedNowPlayingInfo setObject:duration forKey:MPMediaItemPropertyPlaybackDuration];
         [updatedNowPlayingInfo setObject:elapsed forKey:MPNowPlayingInfoPropertyElapsedPlaybackTime];
         [updatedNowPlayingInfo setObject:playbackRate forKey:MPNowPlayingInfoPropertyPlaybackRate];
+        [updatedNowPlayingInfo setObject:queueIndex forKey:MPNowPlayingInfoPropertyPlaybackQueueIndex];
+        [updatedNowPlayingInfo setObject:queueCount forKey:MPNowPlayingInfoPropertyPlaybackQueueCount];
         
         nowPlayingInfoCenter.nowPlayingInfo = updatedNowPlayingInfo;
     }];

@@ -1,5 +1,7 @@
 # Cordova Music Controls Plugin
 
+This has been modified from the main plugin branch to include the ability to set the queue indicator items that arve visible on some cars on iOS despite not using AVQueuePlayer: queueIndex and queueLength
+
 <img src='https://imgur.com/fh3ACOq.png' width='564' height='342'>
 
 Music controls for Cordova applications. Display a 'media' notification with play/pause, previous, next buttons, allowing the user to control the play. Handle also headset event (plug, unplug, headset button).
